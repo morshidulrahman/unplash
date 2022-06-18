@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unplash</title>
+    <!-- font awesome icon -->
+   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <!--css link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>  
+  <div class="header_wrapper search_wrapper">
+    <div class="header_section">
+      <div class="header_left">
+       <div class="header_logo">
+        <a href="/index.html"> <img src="/img/1200x630bb.png" alt="unplash logo"></a>
+       </div>
+       <form action="./search.html">
+        <div class="input_box">
+           <div class="input_wrapper">
+             <input type="text"  name="search" placeholder="search free high-resolution photos" class="search_input" >
+           </div>
+         <i class="fa-solid fa-magnifying-glass"></i>
+         <img src="https://www.bing.com/rp/XvRHqJwJt19aXQca73hQTfvNMxk.svg" alt="visual search">
+        </div>
+     </form>
+      </div>
+      <div class="header_right">
+        <ul>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Blog</a></li>
+          <li class="login"><a href="#">Login</a></li>/
+          <li class="singup"><a href="#">sing up</a></li>
+        </ul>
+        <div class="submit">
+          <button>submit a photo</button>
+          <i class="fa-solid fa-bars" id="menubar"></i>
+        </div>
+      </div>
+      <div class="allmenu">
+        <div class="llmenu_wrapper">
+          <div class="menuitem">
+            <div class="menuitemicon">
+              <h3><i class="fa-solid fa-people-carry-box"></i>company</h3>
+              <span><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+            <ul class="menuitems">
+             <li>About</li>
+             <li>History</li>
+             <li>join the team</li>
+             <li>press</li>
+             <li>contact us</li>
+             <li>help center</li>
+            </ul>
+          </div>
+          <div class="menuitem">
+            <div class="menuitemicon">
+              <h3><i class="fa-solid fa-boxes-stacked"></i>product</h3>
+              <span><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+           <ul class="menuitems">
+            <li>developer/Api</li>
+            <li>unplash dataset</li>
+            <li>unplash for ios</li>
+            <li>App & plugins</li>     
+           </ul>
+         </div>
+         <div class="menuitem">
+           <div class="menuitemicon">
+            <h3><i class="fa-solid fa-people-group"></i>comunnity</h3>
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+           <ul class="menuitems"> 
+             
+            <li>topic</li>
+            <li>collections</li>
+            <li>trends</li>
+            <li>unplash awards</li>
+            <li>stats</li>
+            <div class="icon">
+             <i class="fa-brands fa-twitter"></i>
+             <i class="fa-brands fa-facebook"></i>
+             <i class="fa-brands fa-instagram"></i>
+            </div>
+           </ul>
+         </div>
+         <div class="menuitem footer_hidden">
+          <div class="menuitemicon">
+            <h3><i class="fa-solid fa-file-signature"></i>legal</h3>
+            <span><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+         <ul class="menuitems">
+            <li>License</li>
+            <li>Privacy Policy</li>
+            <li>Terms</li>
+            <li>Security</li>
+         </ul>
+       </div>
+       <div class="menuitem footer_hidden">
+        <div class="menuitemicon">
+          <h3><i class="fa-solid fa-language"></i>English</h3>
+          <span><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+       <ul class="menuitems">
+          <li>Espasic</li>
+       </ul>
+        </div>
+     </div>
+         <div class="allmenu_footer">
+           <ul>
+            <li>License</li>
+            <li> Privacy Policy</li>
+            <li>  Terms</li>
+            <li>Security</li>
+           </ul>
+            <p class="english">English</p>
+            <div class="allmenu_button">
+              <button>submit a photo</button>
+              <button>Login</button>
+            </div>
+            <p class="allmenus_data">New to Unplash?<span>sign up for free</span></p>
+         </div>
+      </div>
+   </div>
+   <!-- <div class="header_down">
+    <form action="./search.html" class="form_search ">
+      <input type="text"  name="search" placeholder="search photos" class="search_input_hidden" value="bus" >
+      <button type="submit" class="button_type active">bus</button>
+    </form>
+    <form action="./search.html" class="form_search">
+      <input type="text"  name="search" placeholder="search photos" class="search_input_hidden" value="ball" >
+      <button type="submit" class="button_type ">ball</button>
+    </form>
+    <form action="./search.html" class="form_search">
+      <input type="text"  name="search" placeholder="search photos" class="search_input_hidden" value="laptop" >
+      <button type="submit" class="button_type ">laptop</button>
+    </form>
+    <form action="./search.html" class="form_search">
+      <input type="text"  name="search" placeholder="search photos" class="search_input_hidden" value="orange" >
+      <button type="submit" class="button_type ">orange</button>
+    </form>
+    <form action="./search.html" class="form_search ">
+      <input type="text"  name="search" placeholder="search photos" class="search_input_hidden" value="bus" >
+      <p class="submits">bus</p>
+    </form>
+  </div> -->
+   </div>
+    <div class="secarch_photo">
+      <h1>Search :<span class="search_value"></span></h1>  
+    </div>
+    <!-- gallery  -->
+    <div class="gallery search_gallery">
+    </div>
+   <!-- popup -->
+   <div class="popup hide">
+    <div class="close_btn"><i class="fa-solid fa-xmark"></i></div>
+    
+     <div class="prev_btn"><i class="fa-solid fa-angle-left"></i></div>
+     <div class="next_btn"><i class="fa-solid fa-angle-right"></i></div>
+ 
+    <div class="popup_content">
+       <div class="popup_header">
+         <div class="popup_left">
+           <img src="" alt="" class="profileimage">
+           <div class="image_desc">
+             <p class="profile_name"></p>
+             <span>Avaliable for hire <i class="fa-solid fa-check"></i></span>
+           </div>
+         </div>
+         <div class="popup_right">
+            <div class="popup_responsive_left">
+             <div class="primary_btn hidden_popup"><i class="fa-solid fa-heart"></i></div>
+            <div class="primary_btn hidden_popup"><i class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="primary_btn popup_btn">download free</div>
+            <div class="primary_btn popup_btn"><i class="fa-solid fa-chevron-down"></i></div>
+         </div>
+       </div>
+       <div class="popup_image">
+         <img src="" alt="gg" class="main_image">
+       </div>
+
+        <div class="popup_footer">
+          
+        </div>
+    </div>
+  </div>
+        
+    <script src="./app.js"></script>
+</body>
+</html>
